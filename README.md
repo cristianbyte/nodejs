@@ -152,3 +152,24 @@ Useful to run `await` at the top level when not inside a function.
 - **Promises** = modern and cleaner.
 - **Async/Await** = the best choice for readable async flow.
 - **Use parallel reading** when tasks don't depend on each other.
+
+
+---
+
+## 🌐 HTTP Status Codes
+| Code | Description | Example |
+|------|-------------|-------------|
+| 100 - 199  |  Informational responses | 102 Processing, 101 Switching Protocols |
+| 200 - 299  |  Successful responses | 200 OK, 201 Created |
+| 300 - 399  |  Redirection messages | 301  Moved Permanently, 302 Found |
+| 400 - 499  |  Client error responses | 400 Bad Request, 401 Unauthorized, 404 Not Found |
+| 500 - 599  |  Server error responses | 500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable |
+
+
+### 📚 Resources: 
+[🐱 HTTP Status Codes](https://http.cat/) 
+[🚧 MDN Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
+
+
+---
+
