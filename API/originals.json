@@ -1,0 +1,155 @@
+[
+    {
+        "id": 25,
+        "name": "Pikachu",
+        "type": [
+            "Electric"
+        ],
+        "owner": "Ash"
+    },
+    {
+        "id": 1,
+        "name": "Bulbasaur",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "owner": "Ash"
+    },
+    {
+        "id": 6,
+        "name": "Charizard",
+        "type": [
+            "Fire",
+            "Flying"
+        ],
+        "owner": "Ash"
+    },
+    {
+        "id": 7,
+        "name": "Squirtle",
+        "type": [
+            "Water"
+        ],
+        "owner": "Ash"
+    },
+    {
+        "id": 143,
+        "name": "Snorlax",
+        "type": [
+            "Normal"
+        ],
+        "owner": "Ash"
+    },
+    {
+        "id": 18,
+        "name": "Pidgeot",
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "owner": "Ash"
+    },
+    {
+        "id": 120,
+        "name": "Staryu",
+        "type": [
+            "Water"
+        ],
+        "owner": "Misty"
+    },
+    {
+        "id": 121,
+        "name": "Starmie",
+        "type": [
+            "Water",
+            "Psychic"
+        ],
+        "owner": "Misty"
+    },
+    {
+        "id": 118,
+        "name": "Goldeen",
+        "type": [
+            "Water"
+        ],
+        "owner": "Misty"
+    },
+    {
+        "id": 35,
+        "name": "Togepi",
+        "type": [
+            "Fairy"
+        ],
+        "owner": "Misty"
+    },
+    {
+        "id": 60,
+        "name": "Poliwag",
+        "type": [
+            "Water"
+        ],
+        "owner": "Misty"
+    },
+    {
+        "id": 54,
+        "name": "Psyduck",
+        "type": [
+            "Water",
+            "Psychic"
+        ],
+        "owner": "Misty"
+    },
+    {
+        "id": 95,
+        "name": "Onix",
+        "type": [
+            "Rock",
+            "Ground"
+        ],
+        "owner": "Brock"
+    },
+    {
+        "id": 74,
+        "name": "Geodude",
+        "type": [
+            "Rock",
+            "Ground"
+        ],
+        "owner": "Brock"
+    },
+    {
+        "id": 111,
+        "name": "Rhyhorn",
+        "type": [
+            "Ground",
+            "Rock"
+        ],
+        "owner": "Brock"
+    },
+    {
+        "id": 37,
+        "name": "Vulpix",
+        "type": [
+            "Fire"
+        ],
+        "owner": "Brock"
+    },
+    {
+        "id": 185,
+        "name": "Sudowoodo",
+        "type": [
+            "Rock"
+        ],
+        "owner": "Brock"
+    },
+    {
+        "id": 213,
+        "name": "Shuckle",
+        "type": [
+            "Bug",
+            "Rock"
+        ],
+        "owner": "Brock"
+    }
+]

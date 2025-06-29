@@ -2,24 +2,45 @@ const http = require('node:http');
 
 const desiredPort = process.env.PORT ?? 3000;
 
+const pokemons = require('./originals.json')
+
 const processRequest = (req, res) => {
-    res.setHeader('Content-Type', 'text/plane; charset=utf-8');
+    const { method, url } = req
 
-    if(req.url === '/') {
-        res.statusCode = 200;
-        res.end('Welcome to my pagé!\n');
+    switch (method) {
+        case 'GET':
+            switch (url) {
+                case '/pokemon':
+                    res.setHeader('Content-Type', 'application/json; charset=utf-8')
+                    return res.end(JSON.stringify(pokemons))
 
-        console.log("Request received:", req.method, req.url);
-    }else if(req.url === '/about') {
-        res.statusCode = 200;
-        res.end('This is the about page.\n');
+                default:
+                    res.statusCode = 404
+                    return res.end('Not found')
+            }
+        case 'POST':
+            switch (url) {
+                case '/pokemon':{
+                    let body = ''
 
-        console.log("Request received:", req.method, req.url);
-    } else {
-        res.statusCode = 404;
-        res.end('Page not found.\n');
+                    req.on('data', chunk =>{
+                        body += chunk.toString()
+                    })
+                    req.on('end', ()=>{
+                        const data = JSON.parse(body)
+                        res.writeHead(201, { 'Content-Type': 'application/json; charset=utf-8' })
+                        data.timestamp = Date.now();
+                        res.end(JSON.stringify({ message: 'Pokemon created successfully', data }))
+                    })
+                    break;
+                }
 
-        console.log("Request received:", req.method, req.url);
+
+                default:
+                    res.statusCode = 404
+                    res.setHeader('Content-Type', 'application/json; charset=utf-8')
+                    return res.end('Not found')
+            }
     }
 }
 
