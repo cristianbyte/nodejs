@@ -6,6 +6,13 @@ app.disable('x-powered-by')
 
 const PORT = process.env.PORT ?? 3000;
 
+// middleware
+app.use('/specificroute', (req, res, next)=>{
+    console.log('specific route middleware');
+
+    next();
+})
+
 app.get('/', (req, res) =>{
   res.json({message: 'Hello, World!'});
 })
